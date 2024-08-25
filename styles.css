@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 85%);
+    
+
+}
+
+
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 30px;
+    max-width: 500px;
+    overflow: hidden;
+    
+
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    /* border-radius: 15px; */
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+
+}
+
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+}
+
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
+}
+
+.operator-xbtn{
+    background-color: hsl(35, 100%, 55%);
+    rotate: 45deg;   
+}
+
+.operator-xbtn:hover{
+    background-color: hsl(35, 100%, 65%);
+    rotate: 45deg;
+}
+
+.operator-xbtn:active{
+    background-color: hsl(35, 100%, 75%);
+}
+
+.utility-btn .image{
+    /* align-items: center; */
+    /* justify-content: center; */
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        display: flex;
+        object-fit: contain;
+    /* overflow: hidden;  */
+}
+
+.utility-btn .image:hover{
+    /* align-items: center; */
+    /* justify-content: center; */
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        display: flex;
+        object-fit: contain;
+        rotate: 45deg;
+        animation: normal;
+    /* overflow: hidden;  */
+}
+
+.utility-btn{
+    background-color: hsl(0, 0%, 60%);
+
+}
+
+.utility-btn:hover{
+    background-color: hsl(0, 0%, 70%);
+    rotate: 45deg;
+    animation: normal;
+
+}
+
+.utility-btn:active{
+    background-color: hsl(0, 0%, 80%);
+}
